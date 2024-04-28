@@ -1,18 +1,18 @@
-import { useState } from "react";
-
 const App = () => {
-  const [time, settime] = useState(new Date().toLocaleTimeString());
-  setInterval(() =>{
-    settime(new Date().toLocaleTimeString())
-  ,1000})
-
-
+  const testHandler = (msg) => {
+    console.log("Function called",msg);
+  };
 
   return (
-    <>
-      <h1>{time}</h1>
-    </>
+    <div>
+      <h1>Hello</h1>
+      <button onClick={() => testHandler("heloo")}>Call Function</button>
+    </div>
   );
 };
 
 export default App
+
+
+//Differnce between function and methods,tdz,hoisting,hof,pure and impure function,{os}
+
